@@ -54,7 +54,7 @@ describe("env.json schema", () => {
     let env = {
       ENV_SSM: {
           type: "ssm",
-          path: "/some/ssm/path"
+          name: "/some/ssm/path"
       },
     };
     let res = v.validate(env, schema);

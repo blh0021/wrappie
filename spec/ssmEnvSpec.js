@@ -8,7 +8,7 @@ describe("AWS Environment Variables Simple Commands", () => {
       envFile: {
         AWS_ENV: {
           type: "ssm",
-          path: "/path/to/aws_env",
+          name: "/path/to/aws_env",
         },
       },
       quiet: true,
@@ -16,7 +16,7 @@ describe("AWS Environment Variables Simple Commands", () => {
     };
 
     let ssmparams = {
-      Name: params.envFile["AWS_ENV"].path,
+      Name: params.envFile["AWS_ENV"].name,
       WithDecryption: true,
     };
 
@@ -34,7 +34,7 @@ describe("AWS Environment Variables Simple Commands", () => {
       envFile: {
         AWS_ENV: {
           type: "ssm",
-          path: "/path/to/aws_env",
+          name: "/path/to/aws_env",
         },
       },
       quiet: true,
