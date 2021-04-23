@@ -1,0 +1,22 @@
+{
+  "name": "wrappie",
+  "version": "0.0.1",
+  "description": "setup environment variables from AWS parameter store",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "bin": {
+    "wrappie": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.890.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.7.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jsonschema": "^1.4.0"
+  }
+}
